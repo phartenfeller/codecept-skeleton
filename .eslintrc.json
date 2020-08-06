@@ -1,7 +1,8 @@
 {
-  "extends": ["airbnb-base", "prettier"],
+  "extends": ["airbnb-base", "prettier", "plugin:codeceptjs/recommended"],
   "env": {
-    "node": true
+    "node": true,
+    "codeceptjs/codeceptjs": true
   },
   "parserOptions": {
     "ecmaVersion": 11,
@@ -10,5 +11,5 @@
   "rules": {
     "no-console": 0
   },
-  "plugins": ["prettier"]
+  "plugins": ["prettier", "codeceptjs"]
 }
