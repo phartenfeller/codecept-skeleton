@@ -6,7 +6,8 @@
   "author": "phartenfeller <pharti@hotmail.de>",
   "license": "MIT",
   "scripts": {
-    "start": "npx codeceptjs run"
+    "start": "npx codeceptjs run",
+    "verbose": "npx codeceptjs run --verbose"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
