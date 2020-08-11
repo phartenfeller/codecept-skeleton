@@ -4,12 +4,28 @@ A thin setup to quickly write codecept tests.
 
 ## Usage
 
-`sh npm install or yarn install`
+```sh 
+npm install or yarn install
+```
 
-Write tests in `tests` folder
+Write your tests in `tests` folder with the name `*.test.js`
 
-`npm start or yarn start`
+Run your tests:
+
+```sh
+npm start or yarn start
+```
+
+Additional (debug) output:
+
+```sh
+npm run verbose or yarn verbose
+```
 
 ## Configuration
 
 Edit the `codecept.conf.js`.
+
+## Example
+
+Have a look at `tests/wiki.test.js`
