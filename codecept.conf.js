@@ -12,21 +12,38 @@ exports.config = {
     Puppeteer: {
       url: 'http://localhost',
       show: true,
-      windowSize: '1200x900'
-    }
+      windowSize: '1200x900',
+    },
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
   },
   bootstrap: null,
-  mocha: {},
+  mocha: {
+    reporterOptions: {
+      'codeceptjs-cli-reporter': {
+        stdout: '-',
+        options: {
+          verbose: false,
+          steps: true,
+        },
+      },
+      'mocha-junit-reporter': {
+        stdout: './output/console.log',
+        options: {
+          mochaFile: './output/result.xml',
+        },
+        attachments: true, // add screenshot for a failed test
+      },
+    },
+  },
   name: 'codecept-skeleton',
   plugins: {
     retryFailedStep: {
-      enabled: true
+      enabled: true,
     },
     screenshotOnFail: {
-      enabled: true
-    }
-  }
+      enabled: true,
+    },
+  },
 };

@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npx codeceptjs run",
+    "mocha": "npx codeceptjs run --reporter mocha-multi",
     "verbose": "npx codeceptjs run --verbose"
   },
   "devDependencies": {
@@ -20,6 +21,8 @@
   },
   "dependencies": {
     "codeceptjs": "^2.6.11",
+    "mocha-junit-reporter": "^2.0.0",
+    "mocha-multi": "^1.1.3",
     "puppeteer": "^5.3.1"
   }
 }
