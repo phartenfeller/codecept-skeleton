@@ -4,7 +4,7 @@ A thin setup to quickly write codecept tests.
 
 ## Usage
 
-```sh 
+```sh
 npm install or yarn install
 ```
 
@@ -20,6 +20,12 @@ Additional (debug) output:
 
 ```sh
 npm run verbose or yarn verbose
+```
+
+Mocha output with junit xml output file:
+
+```sh
+npm run mocha or yarn mocha
 ```
 
 ## Configuration
