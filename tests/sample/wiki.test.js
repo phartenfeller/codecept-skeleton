@@ -1,5 +1,5 @@
 Feature(`Wikipedia Test`);
-Scenario(`Search`, async I => {
+Scenario(`Search`, async ({ I }) => {
   I.amOnPage(`https://www.wikipedia.org/`);
   I.waitForElement(`#searchInput`, 5);
   I.fillField(`#searchInput`, `JavaScript`);
